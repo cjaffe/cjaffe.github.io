@@ -1,4 +1,0 @@
-AuthType Basic  
-AuthName "Protected area"  
-AuthUserFile /portfolio/.htpasswd
-require valid-user
