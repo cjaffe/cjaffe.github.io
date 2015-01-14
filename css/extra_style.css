@@ -142,3 +142,18 @@ margin-top: -5px;
 #myCarousel.item img {
 	height: 300px;
 }
+
+.blog-pic {
+	height: 150px;
+	float: left;
+	margin-right: 40px;
+}
+
+.blog-title {
+	line-height: 150px;
+	vertical-align: middle;
+}
+
+.post-title {
+	color:#377491;
+}
