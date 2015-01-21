@@ -27,7 +27,7 @@ padding-top: 5px;
 }
 .leaderboard {
 padding: 60px;
-margin-bottom: -100px;
+margin-bottom: -115px;
 -webkit-border-radius: 6px;
 -moz-border-radius: 6px;
 border-radius: 6px;
@@ -41,7 +41,7 @@ color:#377491;
 }
 .leaderboard p {
 font-family: raleway;
-font-size: 24px;
+font-size: 22px;
 font-weight: lighter;
 line-height: 27px;
 font-size: 24px;
@@ -54,6 +54,7 @@ margin-top: -5px;
 }
 
 #headerpic {
+	margin-left: -45px;
 	height: 170px;
 }
 
@@ -79,6 +80,7 @@ margin-top: -5px;
 } 
 
 .project {
+	margin-left: 45px;
     width: 170px;
     height: 170px;
  	-webkit-border-radius: 100%; 
@@ -113,11 +115,8 @@ margin-top: -5px;
 }
 
 .row {
+	padding-top: 20px;
 	padding-bottom: 50px;
-}
-
-.col-md-3 {
-	width: 280px;
 }
 
 .modal-title {
@@ -140,7 +139,7 @@ margin-top: -5px;
 }
 
 #myCarousel.item img {
-	height: 300px;
+	height: 400px;
 }
 
 .blog-pic {
