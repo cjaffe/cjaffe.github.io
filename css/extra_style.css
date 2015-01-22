@@ -1,12 +1,12 @@
 
 @font-face {
-font-family: raleway;
-src: url('fonts/Raleway_Thin.ttf'),
+	font-family: raleway;
+	src: url('fonts/Raleway_Thin.ttf'),
      url('fonts/Raleway_Thin.eot'); /* IE9+ */
 }
 
 h1, h2, h3, h4, h5, h6 {
-font-family: raleway;
+	font-family: raleway;
 }
 
 p {
@@ -20,33 +20,33 @@ a {
 }
 
 body {
-padding-bottom: 40px;
+	padding-bottom: 40px;
 }
 .nav li {
-padding-top: 5px;
+	padding-top: 5px;
 }
 .leaderboard {
-padding: 60px;
-margin-bottom: -115px;
--webkit-border-radius: 6px;
--moz-border-radius: 6px;
-border-radius: 6px;
-text-align: center;
+	padding: 60px;
+	margin-bottom: -115px;
+	-webkit-border-radius: 6px;
+	-moz-border-radius: 6px;
+	border-radius: 6px;
+	text-align: center;
 }
 .leaderboard h1 {
-font-size: 85px;
-margin-bottom: 5px;
-line-height: 1;
-color:#377491;
-font-weight: bold;
+	font-size: 85px;
+	margin-bottom: 5px;
+	line-height: 1;
+	color:#377491;
+	font-weight: bold;
 }
 .leaderboard p {
-font-family: raleway;
-font-size: 22px;
-font-weight: lighter;
-line-height: 27px;
-font-size: 24px;
-margin-top: -5px;
+	font-family: raleway;
+	font-size: 22px;
+	font-weight: lighter;
+	line-height: 27px;
+	font-size: 24px;
+	margin-top: -5px;
 }
 
 #subtext {
@@ -134,6 +134,15 @@ margin-top: -5px;
 	margin-right: 150px;
 }
 
+.project-row {
+	padding-bottom: 20px;
+}
+
+.col-centered {
+    float: none;
+    margin: 0 auto;
+}
+
 .modal-title {
 	font-size: 18px;
 	font-family: Helvetica;
@@ -170,4 +179,12 @@ margin-top: -5px;
 
 .post-title {
 	color:#377491;
+}
+
+hr {
+    border: none;
+    height: 1px;
+    /* Set the hr color */
+    color: #333; /* old IE */
+    background-color: #333; /* Modern Browsers */
 }
