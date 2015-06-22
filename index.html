@@ -25,7 +25,16 @@
     <body>
         <div class="container">
             <!-- Main hero unit for a primary marketing message or call to action -->
-            <div class="leaderboard">
+            <div data-spy="affix" data-offset-top="100" id="dotNav" class="pull-right">
+                <ul>
+                      <li title="Home" class="active"><a href="#Home"></a></li>
+                      <li title="About"><a href="#About"></a></li>
+                      <li title="Projects"><a href="#Projects"></a></li>
+                      <li title="Blog"><a href="#Blog"></a></li>
+                      <li title="How to Make"><a href="#HTM"></a></li>
+                 </ul>
+            </div>
+            <div id="Home" class="leaderboard dotted">
                 <div class="row">
                     <div class="col-xs-12">
                         <img id="headerpic" class="img-circle" src=images/headshot.jpg alt="CarolineJaffe">
@@ -37,7 +46,7 @@
                         <h1>CAROLINE JAFFE</h1>
                         <p id="subtext">software / cities</p>
                         <div class="icon-container">
-                            <p><a class="icons" href="mailto:caroline.jaffe325@gmail.com" target="_blank"><i class="fa fa-at fa-2x"></i></a>
+                            <p><a class="icons" href="mailto:cjaffe@media.mit.edu" target="_blank"><i class="fa fa-at fa-2x"></i></a>
                                 <a class="icons" href="http://twitter.com/cjaffe325" target="_blank"><i class="fa fa-twitter fa-2x"></i></a>
                                 <a class="icons" href="http://www.linkedin.com/in/carolinejaffe" target="_blank"><i class="fa fa-linkedin fa-2x"></i></a>
                             </p>
@@ -49,15 +58,16 @@
             <div class="row">
                 <hr>
             </div>
-            <h2 class="header">ABOUT</h2>
-            <div class="row">
-                <p>I'm currently an S.M. candidate and graduate research assistant in the <a href="http://socialcomputing.media.mit.edu/" target="_blank">Social Computing group</a> at the <a href="http://www.media.mit.edu/" target="_blank">MIT Media Lab</a>, where I work on software to support scalable and replicable social processes. Previously, I worked as a software engineer at <a href="http://fitbit.com" target="_blank">Fitbit</a> in Boston on the Commerce Engineering team, and prior to that, I spent a year living in <a href="http://www.youtube.com/watch?v=fV-z9SW7QAA&feature=share" target="_blank">Delft (NL)</a> doing research on a <a href="http://us.fulbrightonline.org/" target="_blank">Fulbright fellowship</a>. For my Fulbright research, I applied machine learning and natural language processing techniques to social media data in order to analyze bicycle commuting habits, in an effort to apply my computer science background to my interest in bicycling and sustainable transportation. I received my B.S. in Electrical Engineering and Computer Science from <a href="http://www.yale.edu/" target="_blank">Yale</a> in 2013.</p>
+            <div id="About" class="row dotted">
+                <h2 class="header">ABOUT</h2>
+                <p>I'm currently an S.M. candidate and graduate research assistant in Sep Kamvar's <a href="http://socialcomputing.media.mit.edu/" target="_blank">Social Computing group</a> at the <a href="http://www.media.mit.edu/" target="_blank">MIT Media Lab</a>, where I work on software to support scalable and replicable social processes. Previously, I worked as a software engineer at <a href="http://fitbit.com" target="_blank">Fitbit</a> Boston on the Commerce Engineering team, and prior to that, I spent a year living in <a href="http://www.youtube.com/watch?v=fV-z9SW7QAA&feature=share" target="_blank">Delft (NL)</a> doing research on a <a href="http://us.fulbrightonline.org/" target="_blank">Fulbright fellowship</a>. For my Fulbright research, I applied machine learning and natural language processing techniques to social media data in order to analyze bicycle commuting habits, in an effort to apply my computer science background to my interest in bicycling and sustainable transportation. I received my B.S. in Electrical Engineering and Computer Science from <a href="http://www.yale.edu/" target="_blank">Yale</a> in 2013.</p>
                 <br>
                 <p>When I'm not working with computers and data, I generally try to get outside (favorites include biking, hiking, playing ultimate frisbee and exploring cities by foot or bike), go to museums, listen to live music (like this <a href="http://www.mattjaffemusic.com/" target="_blank">talented young band</a>), read, write letters, try new restaurants, knit, or make tentative culinary forays. I also love maps!</p>
                 <hr>
             </div>
-            <h2 class="header">PROJECTS</h2>
-            <div class="row project-row">
+            <div id="Projects" class="dotted">
+                <div class="row project-row">
+                <h2 class="header">PROJECTS</h2>
                 <!-- Button trigger modal -->
                 <div class="col-xs-3">
                     <div data-toggle="modal" data-target="#modal2" class="project" style="background-image:url(images/issue-to-action.jpg)">
@@ -118,7 +128,7 @@
                     </div>
                 </div>
             </div>
-            <div class="row project-row">
+            <div class="row project-row-last">
                 <div class="col-xs-3 col-centered">
                     <div data-toggle="modal" data-target="#modal10" class="project" style="background-image:url(images/full-view.JPG)">
                         <div class="project-title">
@@ -126,6 +136,7 @@
                         </div>
                     </div>
                 </div>
+                <hr>
             </div>
             <!-- Modal2 -->
             <div class="modal fade" id="modal2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
@@ -161,7 +172,7 @@
                         <div class="modal-body">
                             After graduating from Yale, I spent a year researching urban cycling behavior as a Fulbright Fellow at Delft University of Technology (TU Delft) in the Netherlands. I used computational data analysis to learn about urban bicycling, a successful form of mobility in the Netherlands – 27% of all trips are made by bicycle! – but one that faces growing pains in the U.S., where cycling comprises less than 1% of trips.
                             <br><br>
-                            Building upon work done by my Dutch colleagues, I investigated the attitudes, emotions and motivations that surround an individual’s decision to cycle or not. Environmental factors are important, but research suggests that less tangible factors, like the way a community perceives cyclists or a person’s habits, can have equal impact. To study these factors, I collected Twitter data and analyzed it using Naive Bayes sentiment analysis and Latent Dirichlet Allocation topic modeling. My investigation was aimed at both deciphering the way people feel about bicycling and evaluating social media analysis as a research method for understanding transit habits. I found that cycling sentiment is highly bimodal. Discussion centers around high-profile issues, both positive (e.g. new bike lanes) and negative (e.g. dangerous cycling behavior), that capture the attention of cycling advocates and detractors. While I faced challenges in establishing the reliability and representativeness of Twitter data, social media analysis proved an exciting technique that offered real-time access to opinions richer and more direct than those collected in traditional transportation research. My findings, which reflected on the possibilities and challenges of using social media analysis to better understand cycling motivations, were gathered in a paper that I am preparing to submit to the international journal Transportation. The full manuscript can be accessed <a href="portfolio/bicycle-social-media-analysis.pdf">here</a>.
+                            Building upon work done by my Dutch colleagues, I investigated the attitudes, emotions and motivations that surround an individual’s decision to cycle or not. Environmental factors are important, but research suggests that less tangible factors, like the way a community perceives cyclists or a person’s habits, can have equal impact. To study these factors, I collected Twitter data and analyzed it using Naive Bayes sentiment analysis and Latent Dirichlet Allocation topic modeling. My investigation was aimed at both deciphering the way people feel about bicycling and evaluating social media analysis as a research method for understanding transit habits. I found that cycling sentiment is highly bimodal. Discussion centers around high-profile issues, both positive (e.g. new bike lanes) and negative (e.g. dangerous cycling behavior), that capture the attention of cycling advocates and detractors. While I faced challenges in establishing the reliability and representativeness of Twitter data, social media analysis proved an exciting technique that offered real-time access to opinions richer and more direct than those collected in traditional transportation research. My findings, which reflected on the possibilities and challenges of using social media analysis to better understand cycling motivations, were gathered in a paper that I am preparing to submit to the international journal Transportation. Please contact me by email if you are interested in obtaining the full manuscript.
                         </div>
                     </div>
                 </div>
@@ -180,7 +191,7 @@
                         <div class="modal-body">
                             I have been working as a software engineer for three months at Fitbit, a company that makes wearable devices that enable users to track step, calorie and stair counts, as well as map exercise routes and measure heart rate. Fitbit’s work relates closely to my interest in analyzing human dynamics and tackles public health issues by encouraging users to exercise more and make healthy choices. 
                             <br><br>
-                            In addition to being a Fitbit employee and a long-time Fitbit user myself, Fitbit devices were a key component of my senior thesis in college. For this project, which I designed and executed independently, I collected annotated activity data from several friends, and used it to train a Random Forests classifier to understand when a user was intentionally exercising (e.g. by going on a run) or merely increasing their step count incidentally (e.g. by walking to class). Using this model of user behavior, I programmed an Aldebaran Nao humanoid robot to communicate and coach the user, with the idea that an embodied presence can give rise to more significant changes in a user’s behavior. Through these interactions, I sought to present the robot as a social presence who understood the context of a user’s life and exercise habits. One of the greatest barriers to successful personal fitness tracker usage has been durable engagement; usage diminishes as the excitement of the new product wears off. With the embodied presence of a social robot, I hoped that the insights available from the fitness tracker data would continue to seem relevant and that users would stay engaged with the system. A write-up of this project can be found <a href="portfolio/fitbit-robotic-coach.pdf">here</a> and videos of the robot interactions can be found <a href="portfolio/robot-videos.html">here</a>.
+                            In addition to being a Fitbit employee and a long-time Fitbit user myself, Fitbit devices were a key component of my senior thesis in college. For this project, which I designed and executed independently, I collected annotated activity data from several friends, and used it to train a Random Forests classifier to understand when a user was intentionally exercising (e.g. by going on a run) or merely increasing their step count incidentally (e.g. by walking to class). Using this model of user behavior, I programmed an Aldebaran Nao humanoid robot to communicate and coach the user, with the idea that an embodied presence can give rise to more significant changes in a user’s behavior. Through these interactions, I sought to present the robot as a social presence who understood the context of a user’s life and exercise habits. One of the greatest barriers to successful personal fitness tracker usage has been durable engagement; usage diminishes as the excitement of the new product wears off. With the embodied presence of a social robot, I hoped that the insights available from the fitness tracker data would continue to seem relevant and that users would stay engaged with the system. Please contact me by email if you are interested in obtaining the full report and seeing the robot videos.
                         </div>
                     </div>
                 </div>
@@ -199,7 +210,7 @@
                         <div class="modal-body">
                             After spending a summer commuting in the Bay Area and experiencing first-hand the shortcomings of the area’s public transportation systems, I was interested in learning about the area’s transit history and thinking about how these systems could be made more accessible and useful. I used the final project of a GIS class as an opportunity to explore possibilities for expansion. I learned that when the Bay Area Rapid Transit (BART) was originally conceived in the 1950s, planners visualized a transit system that would encircle the Bay. For various reasons, only a fraction of the system was implemented and today, BART connects a wide swath of the East Bay with just a sliver of Southeastern San Francisco and parts of the peninsula. While the system itself is relatively reliable, fast and cheap, it is weakened by its minimal coverage in San Francisco and bulky interface with other transit systems.
                             <br><br>
-                            For my analysis, I collected data on population, traffic and job density, city topography, and existing public transportation systems, and integrated this information using GIS map algebra to optimize the placement of new branches of the BART system in San Francisco. The full report can be found <a href="portfolio/where-does-bart-belong.pdf">here</a>.
+                            For my analysis, I collected data on population, traffic and job density, city topography, and existing public transportation systems, and integrated this information using GIS map algebra to optimize the placement of new branches of the BART system in San Francisco. Please contact me by email if you are interested in obtaining the full report.
                             <br><img class="modal-image" src="images/projects/job-density.jpg" alt="SF Job Density">
                             <img class="modal-image" src="images/projects/final-proposal.jpg" alt="Final BART extension proposal">
                         </div>
@@ -222,7 +233,7 @@
                             <br><br>			<img class="modal-image" src="images/projects/closeup.jpg" alt="Closeup"><br>
                             <img class="modal-image" src="images/projects/fullview.jpg" alt="Full view of quadcopter">
                             <br>
-                            Through our calibrations and testing, we produced a set of parameters for our control algorithm that allowed the drone to successfully follow and avoid a wall, staying within 0.5 to 2m. This project laid important groundwork for other useful projects involving quadcopters and was an instructive opportunity for hands-on hardware work. A full write-up of the project can be found at <a href="portfolio/quadcopter.pdf">here</a>.
+                            Through our calibrations and testing, we produced a set of parameters for our control algorithm that allowed the drone to successfully follow and avoid a wall, staying within 0.5 to 2m. This project laid important groundwork for other useful projects involving quadcopters and was an instructive opportunity for hands-on hardware work. Please contact me by email if you are interested in obtaining the full report.
                         </div>
                     </div>
                 </div>
@@ -241,7 +252,7 @@
                             <br><br><img class="modal-image" src="images/projects/board.jpg" alt="I2C Protocol Hacking"><br>
                             <img class="modal-image" src="images/projects/setup.jpg" alt="The engineering setup"><br>
                             <img class="modal-image" src="images/projects/keepons.jpg" alt="8 Keepons ready for filming"><br>
-                            This project set an example of overcoming cost constraints in robotics research by reverse-engineering toy robots. Our work has evolved into a cheap, open-source robotics platform with accompanying tutorials. Versions of these “hacked” robots have been presented at the World Science Fair in New York City and exhibited at AAAI and CogSci, flagship research conferences in artificial intelligence and cognitive science. This project encouraged me to think deeply about how scientific research can be used to understand human behavior and was a course-related opportunity to apply technology to human issues. A more detailed description of the project can be found <a href="portfolio/odd-keepon-out.pdf">here</a>.
+                            This project set an example of overcoming cost constraints in robotics research by reverse-engineering toy robots. Our work has evolved into a cheap, open-source robotics platform with accompanying tutorials. Versions of these “hacked” robots have been presented at the World Science Fair in New York City and exhibited at AAAI and CogSci, flagship research conferences in artificial intelligence and cognitive science. This project encouraged me to think deeply about how scientific research can be used to understand human behavior and was a course-related opportunity to apply technology to human issues. Please contact me by email if you are interested in obtaining the full report.
                         </div>
                     </div>
                 </div>
@@ -277,7 +288,7 @@
                         <div class="modal-body">
                             For my final paper in a seminar on cartography, I delved into the world of transit map design. I focused specifically on Harry Beck’s 1931 schematic map of the London Underground and Massimo Vignelli’s 1972 map of the New York City Subway. While Beck’s map was generally accepted and has set the standard for transit map design throughout the world, Vignelli’s schematic map – which incorporated Beck’s design principles – drew widespread criticism for its geographic distortions and was soon replaced by a more geographically accurate map. In my paper, I discuss factors that impact transit map usability and argue that Vignelli’s map was unsuccessful because it challenged New Yorkers’ unique mental relationship with the geography of their city. Because of New York’s alphanumeric grid system, New Yorkers have a specific mental idea of the space-time relationship between two points in the city based on their grid coordinates; introducing a map, such as Vignelli’s, with such obvious geographic distortions betrayed that mental map. In cities with non-orthogonal street systems, the cognitive link between locations is less precise; in these settings, diagrammatic, geographically distorted maps may have greater utility. 
                             <br><br>
-                            The research for this paper made me think deeply about humans’ mental relationship to maps, how information and design affect usability, and how people think about navigating cities. My full paper can be found <a href="portfolio/transit-map-debate.pdf">here</a>.
+                            The research for this paper made me think deeply about humans’ mental relationship to maps, how information and design affect usability, and how people think about navigating cities. Please contact me by email if you are interested in obtaining the full paper.
                         </div>
                     </div>
                 </div>
@@ -301,11 +312,78 @@
                     </div>
                 </div>
             </div>
+            </div>
+            <div id="Blog" class="row dotted">
+                <h2 class="header">BLOG</h2>
+                <p>There will be a blog here someday, with (likely) highly intermittant thoughts on grad school, bicycling, computer science, women in STEM, general news, and more...!</p>
+                <hr>
+            </div>
+            <div id="HTM" class="row dotted last">
+                <h2 class="header">How to Make (Almost) Anything</h2>
+                <p>Beginning Fall 2015, I am hoping/ planning to take Neil Gershenfeld's (in)famous class called "How to Make (Almost) Anything". Neil is the director of MIT's Center for Bits and Atoms, which is co-located with the Media Lab in MIT Bldg E15. Many first year Media Lab students take How to Make, and I am looking forward to the challenge and opportunity.</p>
+            </div>
             <!-- End of modal -->
         <footer></footer> 
     	</div><!-- /container -->
         <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js">
+        </script>
+        <script>
+        /* dot nav, from http://www.bootply.com/61276*/
+            $(window).bind('scroll',function(e){
+              redrawDotNav();
+            });
+
+            function redrawDotNav(){
+              
+                var topNavHeight = 0;
+                var numDivs = $('div.dotted').length;
+                
+                $('#dotNav li a').removeClass('active').parent('li').removeClass('active');     
+                $('div.dotted').each(function(i,item){
+                  var ele = $(item), nextTop;
+                
+                  
+                  if (typeof ele.next().offset() != "undefined") {
+                    nextTop = ele.next().offset().top;
+                  }
+                  else {
+                    nextTop = $(document).height();
+                  }
+                  
+                  if (ele.offset() !== null) {
+                    thisTop = ele.offset().top - ((nextTop - ele.offset().top) / numDivs);
+                  }
+                  else {
+                    thisTop = 0;
+                  }
+                  
+                  var docTop = $(document).scrollTop()+topNavHeight;
+                  
+                  if(docTop >= thisTop && (docTop < nextTop)){
+                    $('#dotNav li').eq(i).addClass('active');
+                  }
+                });   
+            }
+
+            /* get clicks working */
+            $('#dotNav li').click(function(){
+              
+                var id = $(this).find('a').attr("href"),
+                  posi,
+                  ele,
+                  padding = $('.navbar-fixed-top').height();
+              
+                ele = $(id);
+                posi = ($(ele).offset()||0).top - padding;
+              
+                $('html, body').animate({scrollTop:posi}, 'slow');
+              
+                return false;
+            });
+
+            /* end dot nav */
+        </script>
         <!-- Include all compiled plugins (below), or include individual files as needed -->
         <script src="js/bootstrap.min.js"></script>
     </body>
