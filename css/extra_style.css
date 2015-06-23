@@ -92,6 +92,11 @@ body {
 	margin-bottom: 15px;
 }
 
+.htm {
+	margin-top: 50px;
+	color: #377491;
+
+}
 .img-button {
 	height: 170px;
 	}
@@ -256,4 +261,12 @@ section{min-height:100%;}
 	margin: 0px 0px 0px 25px;
 	position: relative;
 	top:-5px;
+}
+
+.bold {
+	font-weight: bolder;
+}
+
+.centered {
+	text-align: center;
 }
