@@ -299,6 +299,10 @@ section{min-height:100%;}
 	margin-bottom: 10px;
 }
 
+.htm-h3 {
+	margin-top: -10px
+}
+
 .backNav {
 	top: 2%; 
 	left: 1%;
