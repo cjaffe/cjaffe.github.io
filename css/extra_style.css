@@ -9,10 +9,14 @@ h1, h2, h3, h4, h5, h6 {
 	font-family: raleway;
 }
 
-p {
+p, ul, li {
 	font-size: 16px;
 	font-family: Helvetica;
 	font-weight: lighter;
+}
+
+li {
+	margin: 7px;
 }
 
 a {
@@ -303,9 +307,21 @@ section{min-height:100%;}
 	margin-top: -10px
 }
 
+.date {
+	margin-top: -7px;
+	color: #377491;
+	font-weight: bold;
+}
+
 .backNav {
 	top: 2%; 
 	left: 1%;
 	position:fixed;
 	z-index:2;
+}
+
+.blog-link {
+	font-size: 24px;
+	font-family: raleway;
+	text-align: center;
 }
