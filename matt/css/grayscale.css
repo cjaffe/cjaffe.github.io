@@ -161,7 +161,7 @@ a:focus {
 }
 
 .intro .intro-body .brand-heading {
-    font-size: 40px;
+    font-size: 30px;
 }
 
 .intro .intro-body .intro-text {
@@ -400,8 +400,12 @@ thead {
     /* fallback */
 }
 
+#upcoming tbody td, thead th {
+    width: 25%;
+    float: left;
+}
 
-tbody td, thead th {
+#previous tbody td, thead th {
     width: 33.3%;
     float: left;
 }
