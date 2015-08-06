@@ -325,3 +325,9 @@ section{min-height:100%;}
 	font-family: raleway;
 	text-align: center;
 }
+
+.question {
+	font-style: italic;
+	color: #377491;
+	padding-top: 15px;
+}
