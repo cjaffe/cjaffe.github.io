@@ -30,6 +30,10 @@ h6 {
     letter-spacing: 1px;
 }
 
+.emphasis {
+    font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+
 p {
     margin: 0 0 25px;
     font-size: 18px;
@@ -409,7 +413,8 @@ tbody {
 }
 
 thead {
-    /* fallback */
+    font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size: 16px;
 }
 
 #upcoming tbody td, thead th {
@@ -429,4 +434,38 @@ thead {
 .icons {
     color: white;
     margin: 10px;
+}
+
+.item {
+    height: 400px;
+}
+
+.carousel-img {
+    margin: auto;
+}
+
+#myCarousel {
+    padding-bottom: 10px;
+}
+
+.thumb {
+    height: 75;
+}
+
+.list-inline li {
+    width: 100px;
+    height: 75px;
+    overflow: hidden;
+}
+
+.carousel-control {
+    top: 370px;
+}
+
+.right {
+    right: -70px !important;
+}
+
+.left {
+    left: -70px !important;
 }
