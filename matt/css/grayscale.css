@@ -261,6 +261,18 @@ a:focus {
     padding-top: 100px;
 }
 
+.show-section {
+    background: url(../img/img4.jpeg) no-repeat center center scroll;
+    width: 100%;
+    padding: 50px 0;
+    color: #fff;
+    background-color: #000;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+}
+
 .download-section {
     width: 100%;
     padding: 50px 0;
@@ -388,11 +400,11 @@ tr:after {
 thead th {
     height: 30px;
 
-    text-align: left;
+    text-align: center;
 }
 
 tbody {
-    height: 120px;
+    height: 300px;
     overflow-y: auto;
 }
 
@@ -403,6 +415,10 @@ thead {
 #upcoming tbody td, thead th {
     width: 25%;
     float: left;
+}
+
+#upcoming thead th {
+    width: 25%;
 }
 
 #previous tbody td, thead th {
