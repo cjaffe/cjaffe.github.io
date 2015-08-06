@@ -452,7 +452,7 @@ thead {
     height: 75;
 }
 
-.list-inline li {
+.list-inline.thumbs li {
     width: 100px;
     height: 75px;
     overflow: hidden;
