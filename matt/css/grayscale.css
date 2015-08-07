@@ -489,3 +489,22 @@ thead {
     right: -30px !important;
     left: auto;
 }
+
+.well {
+    color: black;
+}
+
+.article-div {
+    background-color: whitesmoke;
+    width: 220px;
+    height: 60px;
+    border-radius: 5px;
+    margin: auto;
+    margin-bottom: 20px;
+}
+
+.article-text {
+    font-family: Montserrat;
+    font-size: 18px;
+    padding-top: 15px;
+}
