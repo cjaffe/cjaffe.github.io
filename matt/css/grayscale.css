@@ -266,7 +266,7 @@ a:focus {
 }
 
 .show-section {
-    background: url(../img/img4.jpeg) no-repeat center center scroll;
+    background: url(../img/show-background.jpg) no-repeat center center scroll;
     width: 100%;
     padding: 50px 0;
     color: #fff;
@@ -417,6 +417,14 @@ thead {
     font-size: 16px;
 }
 
+.table-striped > tbody > tr:nth-child(2n+1) > td, .table-striped > tbody > tr:nth-child(2n+1) > th {
+   background-color: red;
+}
+
+#upcoming {
+    margin-bottom: 40px;
+}
+
 #upcoming tbody td, thead th {
     width: 25%;
     float: left;
@@ -448,10 +456,6 @@ thead {
     padding-bottom: 10px;
 }
 
-.thumb {
-    height: 75;
-}
-
 .list-inline.thumbs li {
     width: 100px;
     height: 75px;
@@ -462,10 +466,26 @@ thead {
     top: 370px;
 }
 
+.carousel-inner > .item > img {
+    margin: 0 auto;
+    height: 400px;
+}
+
 .right {
     right: -70px !important;
 }
 
 .left {
     left: -70px !important;
+}
+
+.vid-left {
+    top: 330px;
+    left: -30px !important;
+}
+
+.vid-right {
+    top: 330px;
+    right: -30px !important;
+    left: auto;
 }
