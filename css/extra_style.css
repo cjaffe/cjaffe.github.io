@@ -150,6 +150,8 @@ body {
 
 .row {
 	padding-top: 20px;
+	margin-left: 150px;	
+	margin-right: 150px;
 }
 
 @media(min-width::768px) {
