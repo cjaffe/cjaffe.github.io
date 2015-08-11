@@ -524,3 +524,8 @@ thead {
     margin-top: 5px;
     margin-bottom: 5px;
 }
+
+.fb_iframe_widget {
+    display: block !important;
+    margin: 10px;
+}
