@@ -537,6 +537,10 @@ thead {
     font-size: 18px;
 }
 
+#bottom-contact-label {
+    margin-bottom: 0px;
+}
+
 #subscribe-btn {
     display: block;
     color: black;
