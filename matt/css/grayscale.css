@@ -460,7 +460,8 @@ thead {
 }
 
 .carousel-control {
-    top: 370px;
+    top: 350px;
+    font-size: 50px;
 }
 
 .carousel-inner > .item > img {
@@ -477,12 +478,12 @@ thead {
 }
 
 .vid-left {
-    top: 330px;
+    top: 300px;
     left: -30px !important;
 }
 
 .vid-right {
-    top: 330px;
+    top: 300px;
     right: -30px !important;
     left: auto;
 }
