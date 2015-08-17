@@ -548,3 +548,7 @@ thead {
     padding-top: 3px;
     padding-bottom: 3px;
 }
+
+.twitter-follow-button {
+    margin: 20px;
+}
