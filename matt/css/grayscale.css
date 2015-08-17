@@ -536,7 +536,7 @@ thead {
 }
 
 #bottom-contact-label {
-    margin-bottom: 0px;
+    margin-bottom: 5px;
 }
 
 .subscribe-btn {
@@ -550,5 +550,6 @@ thead {
 }
 
 .twitter-follow-button {
-    margin: 20px;
+    margin-top: 20px;
+    margin-bottom: 5px;
 }
