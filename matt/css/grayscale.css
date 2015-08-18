@@ -335,6 +335,14 @@ a:focus {
     background-color: #5D84A5;
 }
 
+.streaming:hover,
+.streaming:focus {
+    border: 1px solid #6B7D8C;
+    outline: 0;
+    color: #000;
+    background-color: #6B7D8C;
+}
+
 ul.banner-social-buttons {
     margin-top: 0;
 }
@@ -460,7 +468,7 @@ thead {
 }
 
 .carousel-control {
-    top: 350px;
+    top: 340px;
     font-size: 50px;
 }
 
@@ -470,21 +478,21 @@ thead {
 }
 
 .right {
-    right: -70px !important;
+    right: -85px !important;
 }
 
 .left {
-    left: -70px !important;
+    left: -85px !important;
 }
 
 .vid-left {
-    top: 300px;
-    left: -30px !important;
+    top: 290px;
+    left: -40px !important;
 }
 
 .vid-right {
-    top: 300px;
-    right: -30px !important;
+    top: 290px;
+    right: -40px !important;
     left: auto;
 }
 
@@ -509,12 +517,8 @@ thead {
 }
 
 #audio-announce {
-    font-size: 28px;
-}
-
-#audio-announce a {
-    font-size: 28px;
-    color: white;
+    font-size: 24px;
+    margin-bottom: -5px;
 }
 
 #contact p {
@@ -524,6 +528,16 @@ thead {
 #press-buttons li {
     margin-top: 5px;
     margin-bottom: 5px;
+}
+
+#streaming-buttons li {
+    margin-top: 5px;
+    margin-bottom: 15px;
+}
+
+.streaming {
+    color: white;
+    border: 1px solid white;
 }
 
 .fb_iframe_widget {
