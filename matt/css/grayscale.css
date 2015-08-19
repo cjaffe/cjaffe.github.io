@@ -521,8 +521,16 @@ thead {
     margin-bottom: -5px;
 }
 
+#contact {
+    padding-top: 100px !important;
+}
+
 #contact p {
     font-size: 28px;
+}
+
+#press-buttons {
+    padding-bottom: 50px;
 }
 
 #press-buttons li {
@@ -566,4 +574,26 @@ thead {
 .twitter-follow-button {
     margin-top: 20px;
     margin-bottom: 5px;
+}
+
+.press-quote a {
+    display: block;
+    font-size: 24px;
+}
+
+.hidden {
+    display: none;
+}
+
+.show {
+    display: inline-block;
+}
+
+.text-btn {
+    color: #5D84A5;
+}
+
+.text-btn:hover {
+    cursor: pointer;
+    color: #6B7D8C;
 }
