@@ -577,6 +577,10 @@ thead {
     padding-bottom: 3px;
 }
 
+.mc-field-group input {
+    color: black;
+}
+
 .twitter-follow-button {
     margin-top: 20px;
     margin-bottom: 5px;
