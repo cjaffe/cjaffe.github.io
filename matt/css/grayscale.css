@@ -148,12 +148,13 @@ a:focus {
 .intro {
     display: table;
     width: 100%;
-    height: auto;
+    height: 100%;
     padding: 100px 0;
     text-align: center;
     color: #fff;
-    background: url(../img/blank-background.jpg) no-repeat bottom center scroll;
+    background: url(../img/matt-cutout.jpg) no-repeat top left scroll;
     background-color: #000;
+    background-size: 100% auto;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     background-size: cover;
@@ -282,7 +283,7 @@ a:focus {
     width: 100%;
     padding: 50px 0;
     color: #fff;
-    background: url(../img/banner.png) no-repeat center center scroll;
+    background: url(../img/Backcover_JK_layered2.jpg) no-repeat center right scroll;
     background-color: #000;
     -webkit-background-size: cover;
     -moz-background-size: cover;
