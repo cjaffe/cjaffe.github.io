@@ -96,11 +96,17 @@ body {
 	margin-bottom: 15px;
 }
 
-.htm {
+.htm-week {
 	margin-top: 50px;
 	color: #377491;
-
+	font-size: 30px;
 }
+
+.htm-title {
+    color: #377491;
+    margin-top: 5px;
+}
+
 .img-button {
 	height: 170px;
 	}
@@ -133,6 +139,11 @@ body {
 
 .htm-project a {
 	text-decoration: none;
+}
+
+.htm-project p {
+	text-align: center;
+	margin-top: 10px;
 }
 
 .project:hover .project-title {
