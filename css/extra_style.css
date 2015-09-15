@@ -223,6 +223,7 @@ hr {
     /* Set the hr color */
     color: #333; /* old IE */
     background-color: #333; /* Modern Browsers */
+    width: 840px;
 }
 
 .htm-hr {
