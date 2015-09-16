@@ -351,3 +351,7 @@ section{min-height:100%;}
 	color: #377491;
 	padding-top: 15px;
 }
+
+.stl-container {
+	text-align: center;
+}
