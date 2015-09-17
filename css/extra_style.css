@@ -355,3 +355,11 @@ section{min-height:100%;}
 .stl-container {
 	text-align: center;
 }
+
+.htm-about {
+	padding-top: 0px;
+}
+
+.bold {
+	font-weight: 700;
+}
