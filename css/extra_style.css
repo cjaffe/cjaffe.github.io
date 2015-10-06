@@ -107,6 +107,11 @@ body {
     margin-top: 5px;
 }
 
+.blog-headline {
+	color: #377491;
+    margin-top: 40px;
+}
+
 .img-button {
 	height: 170px;
 	}
