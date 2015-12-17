@@ -368,3 +368,7 @@ section{min-height:100%;}
 .bold {
 	font-weight: 700;
 }
+
+.copyright {
+	text-align: center;
+}
