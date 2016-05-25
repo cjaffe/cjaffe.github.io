@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Explore the store</title>
+	<title>Sacred Grocery</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+	<link rel="stylesheet" type="text/css" href="../css/store.css">
+	<link href='https://fonts.googleapis.com/css?family=Nunito' rel='stylesheet' type='text/css'>
+	 <script src="../js/d3.v3.min.js" charset="utf-8"></script>
+    <script src="d3-tip.js"></script>
+</head>
+
+<body id="body">
+	<div id="store" class="col-md-5">
+		<h1 id="store-title">Sacred Grocery</h1>
+		<p id="store-exp">In this section, explore grocery products in different categories, add them to the grocery cart, and observe how product pricing changes as currencies relationships change.</p>
+	</div>
+	<div class="col-md-4">
+		<div id="exchange-rates">
+			<h2>Exchange Rates</h2>
+			<p>In this section, explore how different forms of currency relate to each other and design the parameters of new currencies.</p> 
+			<p>Gift Economy Units (GEU), are credits earned in service to one's community. Commons-Backed Currency (CCU) is a currency backed by the value of a community's natural resources. Below, use the sliders to change the relationship between old and new currencies, and to design the parameters of the new currencies. Learn more about how this currency design will affect day-to-day shopping experiences in <button type="button" class="btn" data-toggle="modal" data-target="#exampleModal">How can I pay my bill?</button>
+			</p>
+			<div id="sliders">
+			<h4>GIFT ECONOMY UNITS</h4>
+			<p id="geu">1 USD is worth 25 GEU</p>
+			<input id="geu-slider" class="slider" type="range" min="0" max="100" value="25" onchange="updateGEU(this.value)" />
+			<p id="geu1">1 hour of childcare is worth 250 GEU</p>
+			<input id="geu-1-slider" class="slider" type="range" min="0" max="1000" value="250" onchange="updateGEUVal(this, this.value)" />
+			<p id="geu2">1 hour of lending a power tool is worth 150 GEU</p>
+			<input id="geu-2-slider" class="slider" type="range" min="0" max="1000" value="150" onchange="updateGEUVal(this, this.value)" />
+			<p id="geu3">1 homecooked meal is worth 100 GEU</p>
+			<input id="geu-3-slider" class="slider" type="range" min="0" max="1000" value="100" onchange="updateGEUVal(this, this.value)" />
+			<h4>COMMONS-BACKED CURRENCY</h4>
+			<p id="ccu">1 USD is worth 25 CCU</p>
+			<input id="ccu-slider" class="slider" type="range" min="0" max="100" value="25" onchange="updateCCU(this.value)" />
+			<p id="ccu1">1 polluted acre of Middlesex Fells is worth 300 CCU</p>
+			<input id="ccu-1-slider" class="slider" type="range" min="0" max="1000" value="300" onchange="updateCCUVal(this, this.value)" />
+			<p id="ccu2">1 polluted acre of Blue Hills Reservation is worth 350 CCU</p>
+			<input id="ccu-2-slider" class="slider" type="range" min="0" max="1000" value="350" onchange="updateCCUVal(this, this.value)" />
+			<p id="ccu3">1 polluted gallon of the Charles River is worth 25 CCU</p>
+			<input id="ccu-3-slider" class="slider" type="range" min="0" max="1000" value="25" onchange="updateCCUVal(this, this.value)" />
+			</div>
+		</div>
+	</div>
+	<div class="col-md-3">
+		<div id="cart">
+			<h2>Cart</h2>
+			<p>Show prices in:
+			<div class="dropdown">
+				  <button class="btn dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+				    USD
+				    <span class="caret"></span>
+				  </button>
+				  <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+				  	<li><a href="#">USD</a></li>
+				    <li><a href="#">GEU</a></li>
+				    <li><a href="#">CCU</a></li>
+				  </ul>
+				</div>
+			</p>
+			<div id="cart-items"></div>
+			<button class="btn" onclick='clearCart()'>Clear Cart</button>
+			<button type="button" class="btn" data-toggle="modal" data-target="#exampleModal">How can I pay my bill?</button>
+			
+		</div>
+		
+	</div>
+
+	<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel">
+	  <div class="modal-dialog" role="document">
+	    <div class="modal-content">
+	      <div class="modal-header">
+	        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+	        <h2 class="modal-title" id="exampleModalLabel">How can I pay my bill?</h2>
+	      </div>
+	      <div class="modal-body">
+	        <p id="currency"></p>
+	        <p id="lead-text"></p>
+	        <div id="currency-explainers">
+		        <br>
+		        <p class="curr" id="curr1"></p>
+		        <p style="display:none;" class="or">OR</p>
+		        <p class="curr" id="curr2"></p>
+		        <p style="display:none;" class="or">OR</p>
+		        <p class="curr" id="curr3"></p>
+		        <br>
+		        <p id="lead-text2"></p>
+		        <br>
+		        <p class="curr" id="curr4"></p>
+		        <p class="curr" id="curr5"></p>
+		        <p class="curr" id="curr6"></p>
+		        <br>
+		        <p style="display:none;" id="extra-text">*The "right to pollute" a natural resource does not necessarily mean the owner of this right will go out and cause pollution; it merely ascribes a value to the cleanliness of our natural resources.</p>
+		      </div>
+	      </div>
+	      <div class="modal-footer">
+	        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+	      </div>
+	    </div>
+	  </div>
+	</div>
+	
+<script src="store.js"></script>
+</body>
+
+</html>
