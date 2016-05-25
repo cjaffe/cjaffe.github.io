@@ -1,0 +1,112 @@
+#splash-text {
+	background: white;
+	padding: 20px;
+	opacity: .85;
+	width: 600px;
+	margin: auto;
+	margin-top: 100px;
+}
+
+#store_svg {
+	background: white;
+	opacity: .85;
+	margin-left: 60px;
+}
+
+#exchange-rates {
+	background: white;
+	padding: 20px;
+	opacity: .85;
+	margin-top: 30px;
+	width: 425px;
+}
+
+#cart {
+	background: white;
+	padding: 20px;
+	opacity: .85;
+	margin-top: 30px;
+	width: 335px;
+}
+
+.cart_button {
+	color: black;
+}
+
+.slider {
+	padding-bottom: 20px
+	padding-top: 20px;
+}
+
+#sliders p {
+	padding-top: 8px;
+}
+
+#ccu {
+	/*padding-top: 15px;*/
+}
+
+#store-title {
+	background: white;
+	padding: 20px;
+	opacity: .85;
+	margin-left: 15px;
+	width: 540px;
+}
+
+#store-exp {
+	background: white;
+	padding: 20px;
+	opacity: .85;
+	margin-left: 15px;
+	width: 540px;
+}
+
+#splash-text p {
+	font-size: 18px;
+}
+
+h1 {
+	font-size: 70px;
+}
+
+body {
+	font-family: 'Nunito', sans-serif;
+}
+
+#splash {
+	text-align: center;
+    background-image: url("../ls/img/cover.jpg");
+    background-repeat: no-repeat;
+}
+
+#body {
+	background: url("../ls/img/grocery.jpg") no-repeat center center fixed;
+}
+
+a {
+	color: green;
+}
+
+.d3-tip {
+  line-height: 1;
+  font-weight: bold;
+  padding: 5px;
+  background: rgba(0, 0, 0, 0.8);
+  color: #fff;
+  border-radius: 2px;
+  pointer-events: none;
+}
+
+.modal-body p {
+	font-size: 16px;
+}
+
+.curr {
+	text-align: center;
+}
+
+.or {
+	text-align: center;
+}
+
