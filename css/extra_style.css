@@ -15,6 +15,10 @@ p, ul, li {
 	font-weight: lighter;
 }
 
+.modal-body ul, li {
+	font-size: 14px;
+}
+
 li {
 	margin: 7px;
 }
@@ -186,8 +190,8 @@ body {
 	padding-bottom: 20px;
 }
 
-.project-row-last {
-	padding-bottom: 0px;
+.project-row-last .project {
+	margin-bottom: 30px;
 }
 
 .col-centered {
