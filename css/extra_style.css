@@ -15,7 +15,11 @@ p, ul, li {
 	font-weight: lighter;
 }
 
-.modal-body ul, li {
+.modal-body ul {
+	font-size: 14px;
+}
+
+.modal-body li {
 	font-size: 14px;
 }
 
