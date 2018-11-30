@@ -255,9 +255,6 @@ hr {
 	width: 840px;
 }
 
-html,body{height:100%;}
-section{min-height:100%;}
-
 .affix-top {
     top: 1%; 
 	right: 0;
@@ -272,11 +269,15 @@ section{min-height:100%;}
 
 #mainContainer {height:100%;}
 
+html,body{height:100%;}
+section{min-height:100%;}
+
 #dotNav {
 	z-index: 5;
 	right: 1%;
 	padding: 7px;
 	padding-top: 12px;
+	position: fixed;
 }
 #dotNav ul {
 	list-style: none;
@@ -358,6 +359,7 @@ section{min-height:100%;}
 	font-size: 24px;
 	font-family: raleway;
 	text-align: center;
+	font-weight: bold;
 }
 
 .question {
@@ -380,4 +382,8 @@ section{min-height:100%;}
 
 .copyright {
 	text-align: center;
+}
+
+a:hover {
+	color: #243f5d;
 }

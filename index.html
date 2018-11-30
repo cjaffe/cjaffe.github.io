@@ -23,25 +23,26 @@
         <![endif]-->
     </head>
     <body>
-        <div class="container">
+        <div data-spy="affix" data-offset-top="100" id="dotNav" class="pull-right">
+            <ul>
+                  <li title="Home" class="active"><a href="#Home"></a></li>
+                  <li title="About"><a href="#About"></a></li>
+                  <li title="Projects"><a href="#Projects"></a></li>
+                  <li title="Blog"><a href="#Blog"></a></li>
+                  <li title="Fabrication"><a href="#HTM"></a></li>
+             </ul>
+        </div>
+            <div class="container">
             <!-- Main hero unit for a primary marketing message or call to action -->
-            <div data-spy="affix" data-offset-top="100" id="dotNav" class="pull-right">
-                <ul>
-                      <li title="Home" class="active"><a href="#Home"></a></li>
-                      <li title="About"><a href="#About"></a></li>
-                      <li title="Projects"><a href="#Projects"></a></li>
-                      <li title="Blog"><a href="#Blog"></a></li>
-                      <li title="Fabrication"><a href="#HTM"></a></li>
-                 </ul>
-            </div>
+            
             <div id="Home" class="leaderboard dotted">
                 <div class="row">
-                    <div class="col-xs-12">
-                        <img id="headerpic" class="img-circle" src="images/headshot2.jpg" alt="CarolineJaffe">
+                    <div class="col-12">
+                        <img id="headerpic" class="rounded-circle" src="images/headshot2.jpg" alt="CarolineJaffe">
                     </div>
                 </div>
                 <div class="row">
-                    <div class="col-xs-12">
+                    <div>
                         <h1>CAROLINE JAFFE</h1>
                         <p id="subtext">engineering / agriculture / cities</p>
                         <div class="icon-container">
@@ -56,56 +57,63 @@
             <div class="row">
                 <hr>
             </div>
+            <div class="container">
             <div id="About" class="row dotted">
-                <h2 class="header">ABOUT</h2>
-                <p>I'm currently a Ph.D. candidate and graduate research assistant in the <a href="http://resenv.media.mit.edu/" target="_blank">Responsive Environments group</a> at the <a href="http://www.media.mit.edu/" target="_blank">MIT Media Lab</a>, working with Professor Joe Paradiso. Finding creative and thoughtful ways to apply technology to issues of sustainability and human behavior has been one of the key goals of my graduate work. My research focuses on developing sensor technologies to support sustainable agriculture and food systems. </p><br><p>
+                <div class="col-12">
+                    <h2 class="header">ABOUT</h2>
+                </div>
+                <p>I'm currently a Ph.D. candidate and graduate research assistant in the <a href="http://resenv.media.mit.edu/" target="_blank">Responsive Environments group</a> at the <a href="http://www.media.mit.edu/" target="_blank">MIT Media Lab</a>, working with Professor Joe Paradiso. Finding creative and thoughtful ways to apply technology to issues of sustainability and human behavior has been one of the key goals of my graduate work. My research focuses on developing sensor technologies to support sustainable agriculture and food systems. </p><p>
 I received my S.M. from the Media Lab in June 2017; during my Master's, I worked with Professor Sep Kamvar in the <a href="http://socialcomputing.media.mit.edu/" target="_blank">Social Computing group</a>, where I worked on software and hardware to support scalable and replicable social processes that impact urban environments. For my Master's thesis, I built a <a href="Ubicomp-poster-cjaffe.pdf" target="_blank">blockchain-based</a><a href="http://www.trustnodes.com/2017/09/14/mit-prototypes-incentivized-ethereum-powered-blockchain-cycling" target="_blank"> financial incentives system</a> to encourage urban cycling. Before graduate school, I worked as a software engineer at <a href="http://fitbit.com" target="_blank">Fitbit</a> Boston, and spent a year living in <a href="http://www.youtube.com/watch?v=fV-z9SW7QAA&feature=share" target="_blank">Delft (NL)</a> doing research on a <a href="http://us.fulbrightonline.org/" target="_blank">Fulbright fellowship</a>. For my Fulbright research, I applied machine learning and natural language processing techniques to social media data to analyze bicycle commuting habits, in an effort to apply my computer science background to my interest in bicycling and sustainable urban transportation. I received my B.S. in Electrical Engineering and Computer Science from <a href="http://www.yale.edu/" target="_blank">Yale</a> in 2013.</p>
-                <br>
+                
                 <p>When I'm not working with computers and data, I generally try to get outside (favorites include biking, hiking, and exploring cities by foot or bike), make pottery, go to museums, listen to live music (like this <a href="http://www.mattjaffemusic.com/" target="_blank">talented young band</a>), read, write letters, try new restaurants, knit, or make tentative culinary forays. I also love maps!</p>
                 <hr>
             </div>
-            <div id="Projects" class="dotted">
-            <div class="row project-row">
-                <h2 class="header">PROJECT PORTFOLIO</h2>
-                <!-- Button trigger modal -->
-                <div class="col-xs-3">
-                    <div data-toggle="modal" data-target="#modal20" class="project" style="background-image:url(images/projects/grapes/thumb.jpg)">
-                        <div class="project-title">
-                            Determining Grape Ripeness
-                        </div>
-                    </div>
-                </div>
-                <div class="col-xs-3">
-                    <div data-toggle="modal" data-target="#modal21" class="project" style="background-image:url(images/projects/6.115/thumb.jpg)">
-                        <div class="project-title">
-                            Tomato Plant Sensors (6.115 Class Project)
-                        </div>
-                    </div>
-                </div>
-                <div class="col-xs-3">
-                    <div data-toggle="modal" data-target="#modal11" class="project" style="background-image:url(images/projects/thesis/1-bg.jpg)">
-                        <div class="project-title">
-                            Motivating Urban Cycling (S.M. thesis)
-                        </div>
-                    </div>
-                </div>
-                <div class="col-xs-3">
-                    <div data-toggle="modal" data-target="#modal12" class="project" style="background-image:url(images/projects/placelet/cj.png)">
-                        <div class="project-title">
-                            Placelet
-                        </div>
-                    </div>
-                </div>
             </div>
+            <div id="Projects" class="dotted">
+                <div class="container">
+                    <div class="row project-row">
+                        <div class="col-12">
+                            <h2 class="header">PROJECT PORTFOLIO</h2>
+                        </div>
+                        <!-- Button trigger modal -->
+                        <div class="col-3">
+                            <div data-toggle="modal" data-target="#modal20" class="project" style="background-image:url(images/projects/grapes/thumb.jpg)">
+                                <div class="project-title">
+                                    Determining Grape Ripeness
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-3">
+                            <div data-toggle="modal" data-target="#modal21" class="project" style="background-image:url(images/projects/6.115/thumb.jpg)">
+                                <div class="project-title">
+                                    Tomato Plant Sensors (6.115 Class Project)
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-3">
+                            <div data-toggle="modal" data-target="#modal11" class="project" style="background-image:url(images/projects/thesis/1-bg.jpg)">
+                                <div class="project-title">
+                                    Motivating Urban Cycling (S.M. thesis)
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-3">
+                            <div data-toggle="modal" data-target="#modal12" class="project" style="background-image:url(images/projects/placelet/cj.png)">
+                                <div class="project-title">
+                                    Placelet
+                                </div>
+                            </div>
+                        </div>
+                    </div>
             <div class="row project-row">
-                <div class="col-xs-3">
+                <div class="col-3">
                     <div data-toggle="modal" data-target="#modal13" class="project" style="background-image:url(images/projects/road-qual/sensor-side-small.jpg)">
                         <div class="project-title">
                             Road Quality Sensor
                         </div>
                     </div>
                 </div>
-                <div class="col-xs-3">
+                <div class="col-3">
                     <div data-toggle="modal" data-target="#modal14" class="project" style="background-image:url(images/projects/bamboo/full-bike-small.jpg)">
                         <div class="project-title">
                             Bamboo Bicycles Boston
@@ -114,14 +122,14 @@ I received my S.M. from the Media Lab in June 2017; during my Master's, I worked
                 </div>
             
                 <!-- Button trigger modal -->
-                <div class="col-xs-3">
+                <div class="col-3">
                     <div data-toggle="modal" data-target="#modal15" class="project" style="background-image:url(images/projects/htm/wk2.jpg)">
                         <div class="project-title">
                             How to Make (Almost) Anything
                         </div>
                     </div>
                 </div>
-                <div class="col-xs-3">
+                <div class="col-3">
                     <div data-toggle="modal" data-target="#modal16" class="project" style="background-image:url(images/projects/cbc/cbc.png)">
                         <div class="project-title">
                             Cambridge Bicycle Committee
@@ -130,14 +138,14 @@ I received my S.M. from the Media Lab in June 2017; during my Master's, I worked
                 </div>
             </div>
             <div class="row project-row">
-                <div class="col-xs-3">
+                <div class="col-3">
                     <div data-toggle="modal" data-target="#modal17" class="project" style="background-image:url(images/projects/pottery/1-small.jpg)">
                         <div class="project-title">
                             Pottery
                         </div>
                     </div>
                 </div>
-                <div class="col-xs-3">
+                <div class="col-3">
                     <div data-toggle="modal" data-target="#modal18" class="project" style="background-image:url(images/projects/tclub/2016-logo.png)">
                         <div class="project-title">
                             MIT Transportation Club
@@ -146,14 +154,14 @@ I received my S.M. from the Media Lab in June 2017; during my Master's, I worked
                 </div>
         
                 <!-- Button trigger modal -->
-                <div class="col-xs-3">
+                <div class="col-3">
                     <div data-toggle="modal" data-target="#modal19" class="project" style="background-image:url(images/projects/grocery/1.jpg)">
                         <div class="project-title">
                             Sacred Grocery
                         </div>
                     </div>
                 </div>
-                <div class="col-xs-3">
+                <div class="col-3">
                     <div data-toggle="modal" data-target="#modal2" class="project" style="background-image:url(images/issue-to-action.jpg)">
                         <div class="project-title">
                             Civic Tech Hackathon
@@ -162,28 +170,28 @@ I received my S.M. from the Media Lab in June 2017; during my Master's, I worked
                 </div>
             </div>
             <div class="row project-row">
-                <div class="col-xs-3">
+                <div class="col-3">
                     <div data-toggle="modal" data-target="#modal3" class="project" style="background-image:url(images/bicycles.jpg)">
                         <div class="project-title">
                             Exploring Cycling Attitudes
                         </div>
                     </div>
                 </div>
-                <div class="col-xs-3">
+                <div class="col-3">
                     <div data-toggle="modal" data-target="#modal4" class="project" style="background-image:url(images/fitbit.png)">
                         <div class="project-title">
                             Fitbit Personal Coach
                         </div>
                     </div>
                 </div>
-                <div class="col-xs-3">
+                <div class="col-3">
                     <div data-toggle="modal" data-target="#modal5" class="project" style="background-image:url(images/bart.gif)">
                         <div class="project-title">
                             Where Does BART Belong?
                         </div>
                     </div>
                 </div>
-                <div class="col-xs-3">
+                <div class="col-3">
                     <div data-toggle="modal" data-target="#modal6" class="project" style="background-image:url(images/drone.jpg)">
                         <div class="project-title">
                             Quadcopter Sensing System
@@ -192,28 +200,28 @@ I received my S.M. from the Media Lab in June 2017; during my Master's, I worked
                 </div>
             </div>
             <div class="row project-row">
-                <div class="col-xs-3">
+                <div class="col-3">
                     <div data-toggle="modal" data-target="#modal7" class="project" style="background-image:url(images/i2c.jpg)">
                         <div class="project-title">
                             The Odd Keepon Out
                         </div>
                     </div>
                 </div>
-                <div class="col-xs-3">
+                <div class="col-3">
                     <div data-toggle="modal" data-target="#modal8" class="project" style="background-image:url(images/capillaries.jpg)">
                         <div class="project-title">
                             Investigating PDMS Bonding Methods
                         </div>
                     </div>
                 </div>
-                <div class="col-xs-3">
+                <div class="col-3">
                     <div data-toggle="modal" data-target="#modal9" class="project" style="background-image:url(images/tube-map.jpg)">
                         <div class="project-title">
                             The Great Transit Mapping Debate
                         </div>
                     </div>
                 </div>
-                <div class="col-xs-3">
+                <div class="col-3">
                     <div data-toggle="modal" data-target="#modal10" class="project" style="background-image:url(images/full-view.JPG)">
                         <div class="project-title">
                             Architecture
@@ -223,13 +231,14 @@ I received my S.M. from the Media Lab in June 2017; during my Master's, I worked
                 <div class="row project-row"></div>
                 <hr>
             </div>
+            </div>
             <!-- Modal2 -->
             <div class="modal fade" id="modal2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
                 <div class="modal-dialog">
                     <div class="modal-content">
                         <div class="modal-header">
-                            <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
-                            <h4 class="modal-title" id="myModalLabel">Issue to Action - Generation Citizen Civic Tech Challenge <br>Cambridge, MA <br>November 2014</h4>
+                            <h4 class="modal-title" id="myModalLabel">Issue to Action - Generation Citizen Civic Tech Challenge <br>Cambridge, MA <br>November 2014</h4><button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                            
                         </div>
                         <div class="modal-body">
                             In November 2014, I attended Generation Citizen’s Civic Tech Challenge. Generation Citizen is a nationwide non-profit group that empowers teenagers to engage in politics and civic activity. During the 8-hour Civic Tech Challenge hackathon, we built a tool to help young activists decide how and where to allocate their problem-solving energy. Our team prototyped a web application that would connect participants with similarly minded people, educational material, and actionable opportunities to get involved. Screenshots of the basic flow can be seen below.
@@ -249,10 +258,10 @@ I received my S.M. from the Media Lab in June 2017; during my Master's, I worked
                 <div class="modal-dialog">
                     <div class="modal-content">
                         <div class="modal-header">
-                            <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
                             <h4 class="modal-title" id="myModalLabel">Exploring Cycling Attitudes - Fulbright Research Fellowship
                                 <br>Delft, The Netherlands <br> September 2013 - June 2014
-                            </h4>
+                            </h4><button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                            
                         </div>
                         <div class="modal-body">
                             After graduating from Yale, I spent a year researching urban cycling behavior as a Fulbright Fellow at Delft University of Technology (TU Delft) in the Netherlands. I used computational data analysis to learn about urban bicycling, a successful form of mobility in the Netherlands – 27% of all trips are made by bicycle! – but one that faces growing pains in the U.S., where cycling comprises less than 1% of trips.
@@ -268,10 +277,10 @@ I received my S.M. from the Media Lab in June 2017; during my Master's, I worked
                 <div class="modal-dialog">
                     <div class="modal-content">
                         <div class="modal-header">
-                            <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
                             <h4 class="modal-title" id="myModalLabel">Recognizing and Rewarding Intentionality in Personal Fitness Tracker Usage - Senior Thesis
                                 <br> New Haven, CT <br> Spring 2013
-                            </h4>
+                            </h4><button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                            
                         </div>
                         <div class="modal-body">
                             Fitbit is a company that makes wearable devices that enable users to track step, calorie and stair counts, as well as map exercise routes and measure heart rate. Fitbit’s work relates closely to my interest in analyzing human dynamics and tackles public health issues by encouraging users to exercise more and make healthy choices. 
@@ -287,10 +296,10 @@ I received my S.M. from the Media Lab in June 2017; during my Master's, I worked
                 <div class="modal-dialog">
                     <div class="modal-content">
                         <div class="modal-header">
-                            <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
-                            <h4 class="modal-title" id="myModalLabel">Where Does BART Belong? Optimizing the Placement of Additions to the Bay Area’s Transit System
+                             <h4 class="modal-title" id="myModalLabel">Where Does BART Belong? Optimizing the Placement of Additions to the Bay Area’s Transit System
                                 <br>New Haven, CT<br>Fall 2012
-                            </h4>
+                            </h4><button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                           
                         </div>
                         <div class="modal-body">
                             After spending a summer commuting in the Bay Area and experiencing first-hand the shortcomings of the area’s public transportation systems, I was interested in learning about the area’s transit history and thinking about how these systems could be made more accessible and useful. I used the final project of a GIS class as an opportunity to explore possibilities for expansion. I learned that when the Bay Area Rapid Transit (BART) was originally conceived in the 1950s, planners visualized a transit system that would encircle the Bay. For various reasons, only a fraction of the system was implemented and today, BART connects a wide swath of the East Bay with just a sliver of Southeastern San Francisco and parts of the peninsula. While the system itself is relatively reliable, fast and cheap, it is weakened by its minimal coverage in San Francisco and bulky interface with other transit systems.
@@ -308,10 +317,10 @@ I received my S.M. from the Media Lab in June 2017; during my Master's, I worked
                 <div class="modal-dialog">
                     <div class="modal-content">
                         <div class="modal-header">
-                            <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
                             <h4 class="modal-title" id="myModalLabel">Using a Sonar Ranging System to Develop Autonomous Wall-Following for a Quadcopter
                                 <br>New Haven, CT <br>Fall 2012
-                            </h4>
+                            </h4><button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                            
                         </div>
                         <div class="modal-body">
                             For an independent engineering project, a classmate and I developed a custom sonar ranging system for a quadcopter drone. Our goal was to build a system that would allow the drone to follow and avoid a wall, with the idea that we could eventually extend this behavior for tasks like searching, following, transporting, monitoring or leading. This project required the integration of several disciplines and techniques, including hardware for the sensing system and wireless communication, and software for writing the drone’s control algorithms. The sensing system consisted of two sonar sensing modules mounted on a rotating servo motor that produced a distance reading. Based on this reading, we used our control algorithm to set the pitch, roll and yaw values to allow the drone to maintain constant distance from a wall. These values were communicated wirelessly to the Linux system controlling the drone and sent to the drone using its built-in SDK. 
@@ -329,8 +338,8 @@ I received my S.M. from the Media Lab in June 2017; during my Master's, I worked
                 <div class="modal-dialog">
                     <div class="modal-content">
                         <div class="modal-header">
-                            <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
-                            <h4 class="modal-title" id="myModalLabel">The Odd Keepon Out: Using Robots to Examine How Group Size Affects Perceptions of an Outgroup Member<br>New Haven, CT<br>Spring 2012</h4>
+                            <h4 class="modal-title" id="myModalLabel">The Odd Keepon Out: Using Robots to Examine How Group Size Affects Perceptions of an Outgroup Member<br>New Haven, CT<br>Spring 2012</h4><button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                            
                         </div>
                         <div class="modal-body">
                             During my junior year of college, I took a human-robot interaction course that culminated in a month-long robotics research project and final presentation. Two classmates and I wanted to understand how group size impacts perceptions of “outgroup” members. We wanted to model these groups with robots, because robot behavior can be controlled and replicated across many trials, but faced a major challenge in cost. Instead, we reverse-engineered a toy robot – a $20 version of a research-grade robot – so that we could easily scale group size. To gain control of the robot’s servo motors, we used an oscilloscope to monitor the signals passed to motors. We were able to decipher the digital messaging protocol and program the robot with customized actions. With control over the robot’s motors, we conducted an experiment where we asked participants to rate the skill and likeability of a robot with unique actions in groups of different size. We found that perceptions of the individual robot’s talent grew stronger as group size increased; this result has important implications about dynamics in the classroom, on athletic teams, and in professional settings. 
@@ -348,10 +357,10 @@ I received my S.M. from the Media Lab in June 2017; during my Master's, I worked
                 <div class="modal-dialog">
                     <div class="modal-content">
                         <div class="modal-header">
-                            <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
                             <h4 class="modal-title" id="myModalLabel">Investigating PDMS Bonding Methods for Microfluidic Nanosensors
                                 <br>New Haven, CT<br>Summer 2010
-                            </h4>
+                            </h4><button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                            
                         </div>
                         <div class="modal-body">
                             During a summer research experience supported by Yale’s Perspectives on Science program, I worked in an Electrical Engineering and Materials Science lab. Working independently, and with a graduate student, I developed bonding methods to help construct nanosensors that can quickly detect biomarkers – specific proteins that may indicate the presence of disease – in small blood samples. These sensors used tiny microchannels to sort and filter proteins. My work consisted of testing different channel construction methods and designs to discover the strongest and most effective microchannel device design. These nanosensor devices are now the basis of an award-winning biomedical startup that has raised thousands of dollars in venture capital funding.
@@ -367,8 +376,8 @@ I received my S.M. from the Media Lab in June 2017; during my Master's, I worked
                 <div class="modal-dialog">
                     <div class="modal-content">
                         <div class="modal-header">
-                            <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
-                            <h4 class="modal-title" id="myModalLabel">The Great Transit Mapping Debate<br>New Haven, CT<br>Fall 2012</h4>
+                            <h4 class="modal-title" id="myModalLabel">The Great Transit Mapping Debate<br>New Haven, CT<br>Fall 2012</h4><button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                           
                         </div>
                         <div class="modal-body">
                             For my final paper in a seminar on cartography, I delved into the world of transit map design. I focused specifically on Harry Beck’s 1931 schematic map of the London Underground and Massimo Vignelli’s 1972 map of the New York City Subway. While Beck’s map was generally accepted and has set the standard for transit map design throughout the world, Vignelli’s schematic map – which incorporated Beck’s design principles – drew widespread criticism for its geographic distortions and was soon replaced by a more geographically accurate map. In my paper, I discuss factors that impact transit map usability and argue that Vignelli’s map was unsuccessful because it challenged New Yorkers’ unique mental relationship with the geography of their city. Because of New York’s alphanumeric grid system, New Yorkers have a specific mental idea of the space-time relationship between two points in the city based on their grid coordinates; introducing a map, such as Vignelli’s, with such obvious geographic distortions betrayed that mental map. In cities with non-orthogonal street systems, the cognitive link between locations is less precise; in these settings, diagrammatic, geographically distorted maps may have greater utility. 
@@ -384,8 +393,8 @@ I received my S.M. from the Media Lab in June 2017; during my Master's, I worked
                 <div class="modal-dialog">
                     <div class="modal-content">
                         <div class="modal-header">
-                            <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
-                            <h4 class="modal-title" id="myModalLabel">Architecture Projects<br>New Haven, CT<br>Fall 2010</h4>
+                            <h4 class="modal-title" id="myModalLabel">Architecture Projects<br>New Haven, CT<br>Fall 2010</h4><button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                            
                         </div>
                         <div class="modal-body">
                             During an introductory architecture class my sophomore year of college, we were asked to build a model of a space or place using a specified list of materials. Inspired by the Vaillancourt Fountain in San Francisco, I wanted to create a natural space that incorporated both indoor and outdoor areas and hard and soft materials. My piece sought to emulate that fountain, by using the specified materials in asymmetrical, organic ways. I envisioned it as an open space or pavilion that explored the interplay between different spaces and materials. This project encouraged me to think critically about which characteristics contribute to successful, multi-functional and accessible public spaces.
@@ -403,8 +412,8 @@ I received my S.M. from the Media Lab in June 2017; during my Master's, I worked
                 <div class="modal-dialog">
                     <div class="modal-content">
                         <div class="modal-header">
-                            <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
-                            <h4 class="modal-title" id="myModalLabel">Motivating Urban Cycling Through a Blockchain-Based Financial Incentives System (S.M. Thesis)<br>Cambridge, MA<br>September 2016 - Spring 2017</h4>
+                            <h4 class="modal-title" id="myModalLabel">Motivating Urban Cycling Through a Blockchain-Based Financial Incentives System (S.M. Thesis)<br>Cambridge, MA<br>September 2016 - Spring 2017</h4><button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                            
                         </div>
                         <div class="modal-body">
                             As cities become increasingly dense in the coming decades, they must turn to novel technologies and frameworks to address the imminent environmental, mobility, and public health issues that will arise with this population shift. The overwhelming use of single occupancy vehicles in the United States – they account for 76% of all trips – is a major contributor to pollution, traffic, and sedentary lifestyles. However, 50% of trips in the U.S. are less than 3 miles, and could likely be replaced by a more sustainable and space-efficient mode of transportation, such as bicycling, if effective policies and incentives were implemented.
@@ -423,8 +432,8 @@ I received my S.M. from the Media Lab in June 2017; during my Master's, I worked
                 <div class="modal-dialog">
                     <div class="modal-content">
                         <div class="modal-header">
-                            <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
-                            <h4 class="modal-title" id="myModalLabel">Placelet<br>Cambridge, MA<br>June 2015 - January 2016</h4>
+                            <h4 class="modal-title" id="myModalLabel">Placelet<br>Cambridge, MA<br>June 2015 - January 2016</h4><button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                            
                         </div>
                         <div class="modal-body">
                             One of the first projects I got involved with at the Media Lab was called Placelet. Placelet is a system for collecting, analyzing and visualizing data on the human experience of urban places. The system consisted of a physical sensor network that collected movement, audio and air quality data with the goal of better correlating physical conditions and activity to the invisible economic and social patterns that shape the public realm at the scale of a single urban block or streetscape.   
@@ -449,8 +458,8 @@ I received my S.M. from the Media Lab in June 2017; during my Master's, I worked
                 <div class="modal-dialog">
                     <div class="modal-content">
                         <div class="modal-header">
-                            <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
-                            <h4 class="modal-title" id="myModalLabel">Bicycle-Mounted Road Quality Sensor<br>Cambridge, MA<br>Spring 2016</h4>
+                            <h4 class="modal-title" id="myModalLabel">Bicycle-Mounted Road Quality Sensor<br>Cambridge, MA<br>Spring 2016</h4><button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                            
                         </div>
                         <div class="modal-body">
                             For my final project in MAS.836, Sensor Technologies for Interactive Environments, I developed a bicycle-mounted road quality sensor that senses and delivers data about the quality of the road finish (e.g. potholes, rough pavement). The motivation behind this project was to investigate the data-collection capabilities of bicycles, with the idea that we could one day leverage many bicycles in an urban setting (e.g. a bike-share system) to learn more about urban conditions. The sensor is mounted on bicycle handlebars, and uses an accelerometer and two piezoelectric film sensors to sense roughness in the road.  
@@ -470,10 +479,10 @@ I received my S.M. from the Media Lab in June 2017; during my Master's, I worked
                     <div class="modal-dialog">
                         <div class="modal-content">
                             <div class="modal-header">
-                                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
-                                <h4 class="modal-title" id="myModalLabel">Bamboo Bicycles Boston and IDEAS Global Challenge
+                                 <h4 class="modal-title" id="myModalLabel">Bamboo Bicycles Boston and IDEAS Global Challenge
                                     <br> Cambridge, MA <br> January 2016 - present
-                                </h4>
+                                </h4><button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                               
                             </div>
                             <div class="modal-body">
                                 One of the most fun and interesting extracurricular projects I’ve been a part of is <a href="http://www.bamboobicyclesbj.com/bloggingbamboo/" target="_blank">Bamboo Bicycles Beijing (BBB)</a>. BBB is community-driven startup that was founded by a friend at MIT that runs workshops in Beijing teaching people how to build their own bamboo bicycle frames. BBB has now opened or inspired similar workshops in locations around the globe, including Shanghai, Hong Kong, Laos, Ethiopia, Japan, Germany, Denver, and Boston! I met the founder in the <a href="http://fab.cba.mit.edu/classes/863.15/section.CBA/people/Jaffe/index.html" target="_blank">How to Make (Almost) Anything</a> course last year, and was immediately drawn to their focus on community, bicycles, and hands-on fabrication. 
@@ -498,8 +507,8 @@ I received my S.M. from the Media Lab in June 2017; during my Master's, I worked
                 <div class="modal-dialog">
                     <div class="modal-content">
                         <div class="modal-header">
-                            <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
-                            <h4 class="modal-title" id="myModalLabel">How to Make (Almost) Anything<br>Cambridge, MA<br>Fall 2015</h4>
+                            <h4 class="modal-title" id="myModalLabel">How to Make (Almost) Anything<br>Cambridge, MA<br>Fall 2015</h4><button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                            
                         </div>
                         <div class="modal-body">
                             In Fall 2015, I took Professor Neil Gershenfeld's (in)famous "<a href="http://fab.cba.mit.edu/classes/863.15/" target="_blank">How to Make (Almost) Anything</a>" class. Neil is the director of MIT's Center for Bits and Atoms, which is co-located with the Media Lab in MIT Building E14. Each week of the class, we learned a different digital fabrication technique, and then completed a project using that technique. Techniques included laser-cutting, vinyl-cutting, 3D-printing, and PCB design fabrication. Please see <a href="http://fab.cba.mit.edu/classes/863.15/section.CBA/people/Jaffe/index.html" target="_blank">THIS PAGE</a> for pictures and in-depth explanations of my weekly projects.
@@ -517,8 +526,8 @@ I received my S.M. from the Media Lab in June 2017; during my Master's, I worked
                 <div class="modal-dialog">
                     <div class="modal-content">
                         <div class="modal-header">
-                            <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
-                            <h4 class="modal-title" id="myModalLabel">Cambridge Bicycle Committee<br>Cambridge, MA<br>Summer 2015 - present</h4>
+                            <h4 class="modal-title" id="myModalLabel">Cambridge Bicycle Committee<br>Cambridge, MA<br>Summer 2015 - present</h4><button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                            
                         </div>
                         <div class="modal-body">
                             The <a href="http://www.cambridgema.gov/CDD/Transportation/forthepublic/bicyclecomm" target="_blank">Cambridge Bicycle Committee</a>, established by the Cambridge City Council in 1991, works to improve conditions for bicyclists in the City of Cambridge and promote bicycling as a means of transportation. Activities of the Committee include:
@@ -545,8 +554,8 @@ I received my S.M. from the Media Lab in June 2017; during my Master's, I worked
                 <div class="modal-dialog">
                     <div class="modal-content">
                         <div class="modal-header">
-                            <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
-                            <h4 class="modal-title" id="myModalLabel">Pottery<br>Cambridge, MA<br>Fall 2015 - present</h4>
+                            <h4 class="modal-title" id="myModalLabel">Pottery<br>Cambridge, MA<br>Fall 2015 - present</h4><button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                            
                         </div>
                         <div class="modal-body">
                             I have been taking pottery classes through MIT's <a href="http://arts.mit.edu/" target="_blank">Student Art Association</a> for the past year and a half. The classes focus on wheel-throwing and glazing. Lately, I have been particularly focused on experimenting with different ornamentation techniques, including stencils, texturing, glaze and slip pouring, and painting with underglaze. I find pottery a meditative and relaxing process that engages my brain much differently than my research.
@@ -568,8 +577,8 @@ I received my S.M. from the Media Lab in June 2017; during my Master's, I worked
                 <div class="modal-dialog">
                     <div class="modal-content">
                         <div class="modal-header">
-                            <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
-                            <h4 class="modal-title" id="myModalLabel">MIT Transportation Club - Co-President<br>Cambridge, MA<br>June 2015 -  June 2016</h4>
+                            <h4 class="modal-title" id="myModalLabel">MIT Transportation Club - Co-President<br>Cambridge, MA<br>June 2015 -  June 2016</h4><button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                            
                         </div>
                         <div class="modal-body">
                             The <a href="http://transportclub.mit.edu/" target="_blank">MIT Transportation Club</a> aims to bring together the transportation community at MIT for educational events, networking, and research collaborations. Founded in the spring of 2010, the organization has grown rapidly to include over 300 members from across all Schools of the Institute.
@@ -585,8 +594,8 @@ I received my S.M. from the Media Lab in June 2017; during my Master's, I worked
                 <div class="modal-dialog">
                     <div class="modal-content">
                         <div class="modal-header">
-                            <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
-                            <h4 class="modal-title" id="myModalLabel">Sacred Grocery<br>Cambridge, MA<br>Spring 2016</h4>
+                            <h4 class="modal-title" id="myModalLabel">Sacred Grocery<br>Cambridge, MA<br>Spring 2016</h4><button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                            
                         </div>
                         <div class="modal-body">
                             In Spring 2016, I took a course called Liberating Structures, in which we read and discussed different books that hypothesized radically different structures for common societal institutions (e.g. schools) and conventions (e.g. money). At the end of the term, we were each asked to complete a project that explored themes from one or more of the books we had read.
@@ -603,8 +612,8 @@ I received my S.M. from the Media Lab in June 2017; during my Master's, I worked
                 <div class="modal-dialog">
                     <div class="modal-content">
                         <div class="modal-header">
-                            <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
-                            <h4 class="modal-title" id="myModalLabel">Determining Grape Ripeness<br>Cambridge, MA and St. Helena, CA<br>Spring 2018 - present</h4>
+                            <h4 class="modal-title" id="myModalLabel">Determining Grape Ripeness<br>Cambridge, MA and St. Helena, CA<br>Spring 2018 - present</h4><button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                            
                         </div>
                         <div class="modal-body">
                             For the past year or so, I have been developing a "grape ripeness" sensor in collaboration with <a href="http://www.colgincellars.com/" target="_blank">Colgin Cellars</a>, a high-end winery located in St. Helena, CA. The device uses impedance sensing, along with temperature and humidity values, to offer a general "ripesness" score that winemakers can monitor. The sensor is not meant to supercede winemakers' own intuition and experience, but rather to supplement it and give them another data stream to consider when deciding how to care for and when to harvest grapes. More information and photos coming soon!
@@ -617,8 +626,8 @@ I received my S.M. from the Media Lab in June 2017; during my Master's, I worked
                 <div class="modal-dialog">
                     <div class="modal-content">
                         <div class="modal-header">
-                            <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
-                            <h4 class="modal-title" id="myModalLabel">Tomato Plant Sensors<br>6.115 Final Project<br>Cambridge, MA<br>Spring 2018</h4>
+                            <h4 class="modal-title" id="myModalLabel">Tomato Plant Sensors<br>6.115 Final Project<br>Cambridge, MA<br>Spring 2018</h4><button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                            
                         </div>
                         <div class="modal-body">
                             In Spring 2018, I took 6.115, the <a href="http://web.mit.edu/6.115/www/" target="_blank">Microcomputer Project Laboratory</a> through MIT's Computer Science and Electrical Engineering Department. The class teaches fundamental embedded computing concepts through labs that involve low-level microcontroller programming in assembly language. At the end of the course, each student completes a class project that uses two microcontrollers (the Intel 8051 and the Cypress PSoC).
@@ -636,24 +645,34 @@ I received my S.M. from the Media Lab in June 2017; during my Master's, I worked
 
 
             </div>
-            <div id="Blog" class="row dotted">
-                <h2 class="header">BLOG</h2>
-                <p>Highly intermittant thoughts on grad school, bicycling, computer science, women in STEM, general news, and more...</p>
-                <p><a class="blog-link" href="blog/blog4.html">Reflections on Jackson (the film) - March 11, 2017</a></p>
-                <p><a class="blog-link" href="https://medium.com/mit-media-lab/mas-ambassadors-program-reaching-out-to-a-more-diverse-pool-of-students-1129406b1c01#.2l4orc2e7" target="_blank">MAS Ambassadors (on ML Medium site) - March 31, 2016</a></p>
-                <p><a class="blog-link" href="blog/blog3.html">Media Lab Application Advice - December 3, 2015</a></p>
-                <p><a class="blog-link" href="blog/blog2.html">Fulbright Application Advice - August 6, 2015</a></p>
-                <p><a class="blog-link" href="blog/blog1.html">Hello World! - August 4, 2015</a></p>
-                <hr>
+            <div id="Blog" class="container">
+                <div  class="row dotted">
+                    <div class="col-12">
+                            <h2 class="header">BLOG</h2>
+                    </div>
+                    <p>Highly intermittant thoughts on grad school, farming, bicycling, computer science, women in STEM, general news, and more...</p>
+                    <p><a class="blog-link" href="blog/blog4.html">Reflections on Jackson (the film) - March 11, 2017</a></p>
+                    <p><a class="blog-link" href="https://medium.com/mit-media-lab/mas-ambassadors-program-reaching-out-to-a-more-diverse-pool-of-students-1129406b1c01#.2l4orc2e7" target="_blank">MAS Ambassadors (on ML Medium site) - March 31, 2016</a></p>
+                    <p><a class="blog-link" href="blog/blog3.html">Media Lab Application Advice - December 3, 2015</a></p>
+                    <p><a class="blog-link" href="blog/blog2.html">Fulbright Application Advice - August 6, 2015</a></p><br><br>
+                    <p><a class="blog-link" href="blog/blog1.html">Hello World! - August 4, 2015</a></p>
+                    <hr>
+                </div>
             </div>
-            <div id="HTM" class="row dotted last">
-                <h2 class="header">FABRICATION</h2>
-                <p>In Fall 2015, I took Professor Neil Gershenfeld's (in)famous "<a href="http://fab.cba.mit.edu/classes/863.15/" target="_blank">How to Make (Almost) Anything</a>" class. Neil is the director of MIT's Center for Bits and Atoms, which is co-located with the Media Lab in MIT Building E14. Each week of the class, we learned a different digital fabrication technique, and then completed a project using that technique. Please see <a href="http://fab.cba.mit.edu/classes/863.15/section.CBA/people/Jaffe/index.html" target="_blank">this page</a> for pictures and in-depth explanations of my weekly projects.</p>
-                
+            <div class="container">
+                <div id="HTM" class="row dotted last">
+                    <div class="col-12">
+                            <h2 class="header">FABRICATION</h2>
+                    </div>
+                    <p>In Fall 2015, I took Professor Neil Gershenfeld's (in)famous "<a href="http://fab.cba.mit.edu/classes/863.15/" target="_blank">How to Make (Almost) Anything</a>" class. Neil is the director of MIT's Center for Bits and Atoms, which is co-located with the Media Lab in MIT Building E14. Each week of the class, we learned a different digital fabrication technique, and then completed a project using that technique. Please see <a href="http://fab.cba.mit.edu/classes/863.15/section.CBA/people/Jaffe/index.html" target="_blank">this page</a> for pictures and in-depth explanations of my weekly projects.</p>
+                    
+                </div>
             </div>
-            <div class="row dotted last">
-                <!-- <br><br><br><br> -->
-                <p class="copyright"><i class="fa fa-copyright"></i> Caroline Jaffe 2018</p>
+            <div class="container">
+                <div class="row dotted last" style="display: block;"">
+                    <!-- <br><br><br><br> -->
+                    <p class="copyright"><i class="fa fa-copyright"></i> Caroline Jaffe 2018</p>
+                </div>
             </div>
             <!-- End of modal -->
         <footer></footer> 
@@ -675,59 +694,62 @@ I received my S.M. from the Media Lab in June 2017; during my Master's, I worked
 
         <script>
         /* dot nav, from http://www.bootply.com/61276*/
-            $(window).bind('scroll',function(e){
-              redrawDotNav();
-            });
 
-            function redrawDotNav(){
-              
-                var topNavHeight = 0;
-                var numDivs = $('div.dotted').length;
-                
-                $('#dotNav li a').removeClass('active').parent('li').removeClass('active');     
-                $('div.dotted').each(function(i,item){
-                  var ele = $(item), nextTop;
-                
-                  
-                  if (typeof ele.next().offset() != "undefined") {
-                    nextTop = ele.next().offset().top;
-                  }
-                  else {
-                    nextTop = $(document).height();
-                  }
-                  
-                  if (ele.offset() !== null) {
-                    thisTop = ele.offset().top - ((nextTop - ele.offset().top) / numDivs);
-                  }
-                  else {
-                    thisTop = 0;
-                  }
-                  
-                  var docTop = $(document).scrollTop()+topNavHeight;
-                  
-                  if(docTop >= thisTop && (docTop < nextTop)){
-                    $('#dotNav li').eq(i).addClass('active');
-                  }
-                });   
-            }
+        $(window).bind('scroll',function(e){
+          redrawDotNav();
+        });
 
-            /* get clicks working */
-            $('#dotNav li').click(function(){
+        function redrawDotNav(){
+          
+            var topNavHeight = 50;
+            var numDivs = $('section').length;
+            
+            $('#dotNav li a').removeClass('active').parent('li').removeClass('active');     
+            $('section').each(function(i,item){
+              var ele = $(item), nextTop;
               
-                var id = $(this).find('a').attr("href"),
-                  posi,
-                  ele,
-                  padding = $('.navbar-fixed-top').height();
+              console.log(ele.next().html());
               
-                ele = $(id);
-                posi = ($(ele).offset()||0).top - padding;
+              if (typeof ele.next().offset() != "undefined") {
+                nextTop = ele.next().offset().top;
+              }
+              else {
+                nextTop = $(document).height();
+              }
               
-                $('html, body').animate({scrollTop:posi}, 'slow');
+              if (ele.offset() !== null) {
+                thisTop = ele.offset().top - ((nextTop - ele.offset().top) / numDivs);
+              }
+              else {
+                thisTop = 0;
+              }
               
-                return false;
-            });
+              var docTop = $(document).scrollTop()+topNavHeight;
+              
+              if(docTop >= thisTop && (docTop < nextTop)){
+                $('#dotNav li').eq(i).addClass('active');
+              }
+            });   
+        }
 
-            /* end dot nav */
+        /* get clicks working */
+        $('#dotNav li').click(function(){
+          
+            var id = $(this).find('a').attr("href"),
+              posi,
+              ele,
+              padding = $('.navbar-fixed-top').height();
+          
+            ele = $(id);
+            posi = ($(ele).offset()||0).top - padding;
+          
+            $('html, body').animate({scrollTop:posi}, 'slow');
+          
+            return false;
+        });
+
+        /* end dot nav */
+
         </script>
         <!-- Include all compiled plugins (below), or include individual files as needed -->
         <script src="js/bootstrap.min.js"></script>
