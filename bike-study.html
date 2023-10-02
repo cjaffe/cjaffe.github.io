@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+
+<body>
+
+   	<h1>Thank you for participating in the MIT Bicycle Study!</h1>
+
+<!-- START HERE -->
+  <form id="gform" method="POST" action="https://script.google.com/macros/s/AKfycbwzTqnOWt3ReEbdmjtjMvgG-zy7jZuXNbYWxyqufbQJ_8a2_kM/exec" style="display:none">
+    <!-- change the form action to your script url -->
+
+    <fieldset>
+      <input id="code" name="code"/>
+    </fieldset>
+
+    <button>Send</button>
+
+  </form>
+
+<!-- Store auth code in database -->
+<!-- Use auth code to get access token -->
+<!-- Store access token in database -->
+  <!-- Submit the Form to Google Using "AJAX" -->
+  <script data-cfasync="false" type="text/javascript">
+
+  	function setCode() {
+  		//hacky but... get code and set it to be the input field
+  		url = window.location.href;
+		url = url.split('?');
+		var code;
+		for (var i=0;i<url.length;i++) {
+			if (url[i].indexOf("code") >= 0) {
+
+				var helper = url[i].split('=');
+				helper = helper[1]; //eg "code&state="
+				helper = helper.split('&');
+				code = helper[0]; 
+				console.log(code);
+			}
+		}
+		document.getElementById("code").value = code;
+  	}
+  	
+	// get all data in form and return object
+	function getFormData() {
+		setCode();
+	  var elements = document.getElementById("gform").elements; // all form elements
+	  var fields = Object.keys(elements).map(function(k) {
+	    if(elements[k].name !== undefined) {
+	      return elements[k].name;
+	    }
+	  }).filter(function(item, pos, self) {
+	    return self.indexOf(item) == pos && item;
+	  });
+	  var data = {};
+	  fields.forEach(function(k){
+	    data[k] = elements[k].value;
+	    if(elements[k].type === "checkbox"){
+	      data[k] = elements[k].checked;
+	    }
+	  });
+	  console.log(data);
+	  return data;
+	}
+
+function handleFormSubmit() {  // handles form submit withtout any jquery
+  var data = getFormData();         // get the values submitted in the form
+  
+    var url = "https://script.google.com/macros/s/AKfycbwzTqnOWt3ReEbdmjtjMvgG-zy7jZuXNbYWxyqufbQJ_8a2_kM/exec";  //
+    var xhr = new XMLHttpRequest();
+    xhr.open('POST', url);
+    // xhr.withCredentials = true;
+    xhr.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded');
+    xhr.onreadystatechange = function() {
+        console.log( xhr.status, xhr.statusText );
+        console.log(xhr.responseText);
+        return;
+    };
+    // url encode form data for sending as post data
+    var encoded = Object.keys(data).map(function(k) {
+        return encodeURIComponent(k) + '=' + encodeURIComponent(data[k]);
+    }).join('&');
+    xhr.send(encoded);
+}
+function loaded() {
+  console.log('contact form submission handler loaded successfully');
+  // bind to the submit event of our form
+  var form = document.getElementById('gform');
+  form.addEventListener("submit", handleFormSubmit, false);
+};
+document.addEventListener('DOMContentLoaded', loaded, false);
+  //fake calling the form submit
+  handleFormSubmit();
+  </script>
+  <!-- <script data-cfasync="false" type="text/javascript"
+  src="/form-submission-handler.js"></script> -->
+<!-- END -->
+
+</body>
+</html>
